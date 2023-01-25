@@ -13,7 +13,7 @@ li{
 
 .container-big{
     margin:0 auto;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 /* Typo */
@@ -35,7 +35,6 @@ header{
     right: 0;
     background-color: #ff6900;
     z-index: 999;
-    display: block;
 }
 header .container-big{
     display: flex;
@@ -78,8 +77,96 @@ header .container-big li>a{
 header .bar{
     padding: 0 25px;
 }
+
 /* Main */
 main{
+    padding: 150px 0 0 0;
+}
+main .content-shop{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .content-shop .card{
+    width: calc(100%/3 -30px);
+    margin: 20px 15px ; 
     position: relative;
+}
+
+.card-content-img>img{
+    width: 500px;
+}
+
+main h2{
+    font-size: 20px;
+}
+/* Interno Oggetto */
+main .card-info .new-price{
+    display: inline-block;
+    margin-right: 5px;
+    color: red;
+}
+
+main .old-price{
+    text-decoration: line-through;
+}
+
+main .card .card-content-img{
+    position: relative;
+}
+.content-shop .inside-box{
+    position: absolute;
+    padding: 10px;
+    color: white;    
+    bottom: 50px;
+    z-index: 50;
+}
+.content-shop .inside-box.discount{
+    background-color: red;
+}
+
+.content-shop .inside-box.sustain{
+    left: 65px;
+    background-color: green;
+}
+
+.content-shop .inside-box.sustain.last{
+    left: 0;
+    background-color: green;
+}
+
+.content-shop .add-favorities{
+    top: 20px;
+    right: 0;
+    position: absolute;
+    padding: 10px;
+    z-index: 50;
+    background-color: white;
+}
+
+.content-shop .add-favorities a{
+    color: black;
+    font-size: 25px;
+}
+.first-img{
+    z-index: 50;
+}
+
+.card-content-img{
+    position: relative;
+    width: 500px;
+}
+
+.card-content-img .first-img{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.first-img:hover{
+    opacity: 0;
+}
+
+.add-favorities a:hover{
+    color: red;
 }
 /* Footer */
