@@ -104,6 +104,7 @@ main .card-info .new-price{
     display: inline-block;
     margin-right: 5px;
     color: red;
+    font-weight: bold;
 }
 
 main .old-price{
@@ -119,6 +120,7 @@ main .card .card-content-img{
     color: white;    
     bottom: 50px;
     z-index: 50;
+    font-weight: bold;
 }
 .content-shop .inside-box.discount{
     background-color: red;
@@ -170,3 +172,25 @@ main .card .card-content-img{
     color: red;
 }
 /* Footer */
+footer .container-big{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer{
+    margin-top: 50px;
+    color: white;
+    padding: 30px 0px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid white;
+}
+
+footer .footer-list ul{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+footer .footer-list a{
+    font-size: 25px;
+}
